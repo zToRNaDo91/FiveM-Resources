@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `inventory_trunk` (
 );
 
 CREATE TABLE IF NOT EXISTS `ammunition` (
-    `id` bigint unsigned auto_increment PRIMARY KEY,
+    `weapon_id` bigint unsigned auto_increment PRIMARY KEY,
     `owner` text null,
     `hash` text not null,
     `count` int default 0 not null,
